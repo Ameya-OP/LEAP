@@ -29,3 +29,4 @@ It uses the MediaPpe library for python to identify gestures from a live feed an
 RiA stands for RFID Attendance System.
 It uses Pytest for tests and will be written using TDD(Test Driven Development).
 Pytest version 7.1.3 was used, in combination with python 3.11.x
+13.6 Megahertz HFRFID recognition system is being used for the project. It was chosen as it is very affordable and also has a long range.

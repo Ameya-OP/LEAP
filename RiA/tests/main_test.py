@@ -1,8 +1,11 @@
-import pytest
+from LEAP.RiA.main import dataset
 
-def func(x):
-    return x + 1
+#This id will be replaced by the serial id that has been retrieved by the RFID reader module.
+id = "serial4"
 
+list_set = set(dataset)
 
-def test_answer():
-    assert func(3) == 5
+contains_word = lambda s, l: any(map(lambda x: x in s, l))
+
+def test_dataset():
+    assert  id == contains_word(id, list_set)

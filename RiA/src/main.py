@@ -13,12 +13,13 @@ def remover(ids): # The function accepts any object, which in this context will 
 permanent_dataset = ["serial1", "serial2", "serial3", "serial4"]
 
 #This function recovers the `dataset` list according to the `permanent_dataset`
-def recover_dataset(dataset, permanent_dataset):
+def recover_dataset():
+    global dataset
     dataset = permanent_dataset
-    return dataset
+    
     
 
 #Debugging 
 
-recover_dataset(dataset, permanent_dataset)
+recover_dataset()
 print(dataset, "    hello")
